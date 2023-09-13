@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "cover": "https://i.ibb.co/Pg17LFL/1-min.jpg",
+      "title": "The Catcher in the Rye",
+      "author": "J.D. Salinger",
+      "author_img": "https://i.ibb.co/ft8MHrV/1.webp",
+      "posted_date": "2023-09-13",
+      "reading_time": 3,
+      "hashtags": ["#ClassicLiterature", "#ComingOfAge", "#HoldenCaulfield"]
+    },
+    {
+      "id": 2,
+      "cover": "https://i.ibb.co/7yD59Kn/2-min.jpg",
+      "title": "To Kill a Mockingbird",
+      "author": "Harper Lee",
+      "author_img": "https://i.ibb.co/xjZSXgr/2.webp",
+      "posted_date": "2023-09-14",
+      "reading_time": 5,
+      "hashtags": ["#ClassicNovel", "#CivilRights", "#AtticusFinch"]
+    },
+    {
+      "id": 3,
+      "cover": "https://i.ibb.co/m5pv0Pg/3-min.jpg",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "author_img": "https://i.ibb.co/FmCMwRS/3.jpg",
+      "posted_date": "2023-09-15",
+      "reading_time": 4,
+      "hashtags": ["#RoaringTwenties", "#AmericanDream", "#JayGatsby"]
+    },
+    {
+      "id": 4,
+      "cover": "https://i.ibb.co/2dB0tMb/4-min.jpg",
+      "title": "Pride and Prejudice",
+      "author": "Jane Austen",
+      "author_img": "https://i.ibb.co/0KT2Hvx/4.webp",
+      "posted_date": "2023-09-16",
+      "reading_time": 4,
+      "hashtags": ["#ClassicNovel", "#Romance", "#ElizabethBennet"]
+    },
+    {
+      "id": 5,
+      "cover": "https://i.ibb.co/rdmmBN9/5-min.jpg",
+      "title": "The Hobbit",
+      "author": "J.R.R. Tolkien",
+      "author_img": "https://i.ibb.co/ZVpFGDp/5.webp",
+      "posted_date": "2023-09-17",
+      "reading_time": 6,
+      "hashtags": ["#Fantasy", "#MiddleEarth", "#BilboBaggins"]
+    }
+  ]
+  
