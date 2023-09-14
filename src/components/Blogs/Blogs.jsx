@@ -1,12 +1,12 @@
 /* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
+import { FaBookmark as BsBookmark } from "react-icons/fa";
 import { useEffect } from "react";
 import { useState } from "react";
 
-const Blogs = () => {
+const Blogs = ({ handClickBookMark }) => {
   // use state
   const [blogs, setBlogs] = useState([]);
-  console.log(blogs);
 
   //   use effect
   useEffect(() => {
@@ -18,13 +18,17 @@ const Blogs = () => {
   return (
     <section className=" col-span-3 md:col-span-2">
       {blogs.map((blog) => (
-        <DisplayBlogCard key={blog.id} blog={blog}></DisplayBlogCard>
+        <DisplayBlogCard
+          key={blog.id}
+          handClickBookMark={handClickBookMark}
+          blog={blog}
+        ></DisplayBlogCard>
       ))}
     </section>
   );
 };
 
-const DisplayBlogCard = ({ blog }) => {
+const DisplayBlogCard = ({ blog, handClickBookMark }) => {
   const {
     cover,
     author,
@@ -54,17 +58,28 @@ const DisplayBlogCard = ({ blog }) => {
             </p>
           </div>
         </div>
-        <p className="text-[10px] md:text-lg font-medium text-[#11111199]">
-          {reading_time} min read
-        </p>
+        <div className="flex items-center gap-2">
+          <p className="text-[10px] md:text-lg font-medium text-[#11111199]">
+            {reading_time} min read
+          </p>
+          <button
+            onClick={() => handClickBookMark(blog)}
+            className="text-black "
+          >
+            <BsBookmark></BsBookmark>
+          </button>
+        </div>
       </div>
       <h1 className="text-sm md:text-4xl font-bold">{title}</h1>
       <div className=" grid md:flex md:items-center md:gap-4">
         {hashtags.map((hats) => {
           return (
-            <p className=" md:my-3 text-[10px] md:text-lg text-[#11111199] font-medium">
+            <a
+              className="md:my-3 text-[10px] md:text-lg text-[#11111199] font-medium "
+              href="../../../index.html"
+            >
               <small>{hats}</small>
-            </p>
+            </a>
           );
         })}
       </div>
